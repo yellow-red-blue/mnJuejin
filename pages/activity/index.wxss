@@ -1,0 +1,29 @@
+/* pages/activity/index.wxss */
+.swiper image {
+  width: 100%;
+}
+.activeity-wrapper {
+  margin-top: 56px;
+  background: #f5f4f4;
+}
+.active {
+  color: rgb(75, 141, 241);
+}
+scroll-view text {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #999999;
+}
+.scroll {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space:nowrap;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  background: white;
+  z-index: 1000;
+}
+

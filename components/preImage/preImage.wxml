@@ -1,0 +1,18 @@
+<!--components/preImage/preImage.wxml-->
+<!-- 图片数量为1 -->
+<view class="pre-image-wrapper" wx:if="{{oneImageStatus}}">
+  <view bind:tap="checkLargeImage" data-index="{{index}}" class="image-colomn image-colomn1" wx:key="{{index}}" wx:for="{{imgList}}" style="background-image:url('{{item}}')">
+  </view>
+</view>
+
+<!-- 图片数量为2 ，4 -->
+<view wx:if="{{twoImageStatus}}">
+  <view bind:tap="checkLargeImage" data-index="{{index}}" class="image-colomn2 image-colomn" wx:key="{{index}}" wx:for="{{imgList}}" style="background-image:url('{{item}}')">
+  </view>
+</view>
+
+<!-- 图片数量为3，5，6， 7， 8， 9 -->
+<view wx:if="{{moreImageStatus}}">
+  <view bind:tap="checkLargeImage" data-index="{{index}}" class="image-colomn3 image-colomn" wx:key="{{index}}" wx:for="{{imgList}}" style="background-image:url('{{item}}')">
+  </view>
+</view>

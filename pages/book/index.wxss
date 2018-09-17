@@ -1,0 +1,51 @@
+/* pages/book/index.wxss */
+.book-item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+/* left */
+.book-left {
+  flex: 0 0 104rpx;
+}
+.book-left image {
+  width: 100%;
+  height: 144rpx;
+  box-shadow: 4rpx 12rpx 24rpx #c4c4c4;
+}
+
+/* right */
+.book-right {
+  flex: 0 0 160rpx;
+}
+.book-price {
+  height: 60rpx;
+  font-size: 14px;
+  color: rgb(77, 165, 248);
+  text-align: center;
+  line-height: 60rpx;
+  background: rgb(236, 251, 255);
+  border-radius: 30rpx;
+}
+
+/* middle */
+.book-middle {
+  flex: 1;
+  padding-left: 20px;
+}
+.book-title{
+  font-size: 16px;
+  font-weight: 600;
+}
+.book-name {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.book-info {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.book-info text {
+  margin-right: 10px;
+  color: #999999;
+}

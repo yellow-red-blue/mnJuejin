@@ -1,0 +1,47 @@
+/* components/activeity-item/activeity-item.wxss */
+.activeity-item {
+  margin-top: 30px;
+  background: white;
+  box-shadow: 0 4rpx 4rpx  #dddddd;
+}
+.activeity-screenshot {
+  width: 100%;
+}
+.activeity-name {
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+}
+.activeity-time {
+  padding: 10px;
+}
+.activeity-time icon {
+  vertical-align: middle;
+}
+.activeity-time text {
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.activeity-city {
+  padding: 10px;
+}
+.activeity-city icon {
+  vertical-align: middle;
+}
+.activeity-city text {
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.activeity-city .activeity-join {
+  display: inline-block;
+  float: right;
+  padding: 5px 20px;
+  color: white;
+  background: #5bb0f7;
+  border-radius: 40px;
+}

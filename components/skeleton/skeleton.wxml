@@ -1,0 +1,8 @@
+<!--components/skeleton/skeleton.wxml-->
+<view class="skeleton" wx:for="{{skeleton}}" wx:key="{{index}}">
+  <view class="skeleton-title"></view>
+  <view class="skeleton-wrap">
+    <view class="skeleton-type"></view>
+    <view class="skeleton-content"></view>
+  </view>
+</view>

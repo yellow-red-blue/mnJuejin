@@ -1,0 +1,18 @@
+<!--pages/activity/index.wxml-->
+<view class="scroll">
+  <scroll-view scroll-x="true" ><text bindtap="selectCity" class="{{currentIndex === index ? 'active':''}}" data-index="{{index}}" wx:for="{{city}}" wx:key="{{index}}">{{item.cityName}}</text></scroll-view>
+</view>
+<view class="activeity-wrapper">
+  <swiper wx:if="{{swiperList.length}}" class="swiper" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" bindchange="bindchange" duration="{{duration}}" style= "height: {{imgHeightList[current]}}px">
+    <block wx:for="{{swiperList}}" wx:key="{{index}}">
+      <swiper-item>
+        <image lazy-load="true" data-id="{{index}}"  bind:load="imageLoad" src="{{item.screenshot}}" class="slide-image" mode="widthFix" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view wx:for="{{acitiveityList}}" wx:key="index">
+    <v-activeity activeity="{{item}}"></v-activeity>
+  </view>
+</view>
+

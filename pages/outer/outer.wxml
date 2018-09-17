@@ -1,0 +1,2 @@
+<!--pages/outer/outer.wxml-->
+<web-view src="{{url}}"></web-view>

@@ -1,0 +1,25 @@
+/* components/preImage/preImage.wxss */
+.pre-image-wrapper {
+
+}
+.image-colomn {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-colomn1 {
+  width: 500rpx;
+  height: 500rpx;
+  
+}
+.image-colomn2 {
+  display: inline-block;
+  width: 250rpx;
+  margin-right: 10rpx;
+  height: 250rpx;
+}
+.image-colomn3 {
+  display: inline-block;
+  width: 160rpx;
+  margin-right: 10rpx;
+  height: 160rpx;
+}

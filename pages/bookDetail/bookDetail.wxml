@@ -1,0 +1,71 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<view class="book-detail">
+  <view wx:if="{{loading}}">
+    <v-skeleton></v-skeleton>
+  </view>
+  <view class="book-info">
+    <view class="book-left" hover-class="none" hover-stop-propagation="false">
+      <image class="" src="{{bookInfo.img}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+        
+      </image>
+    </view>
+    <view class="book-right" hover-class="none" hover-stop-propagation="false">
+      <view class="book-title" hover-class="none" hover-stop-propagation="false">
+        {{bookInfo.title}}
+      </view>
+      <view class="book-desc" hover-class="none" hover-stop-propagation="false">
+        {{bookInfo.desc}}
+      </view>
+      <view class="book-user-info" hover-class="none" hover-stop-propagation="false">
+        <image class="book-user-avator" src="{{bookInfo.userData.avatarLarge}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+          
+        </image>
+        <view class="book-user-username" selectable="false" space="false" decode="false">
+          {{bookInfo.userData.username}}
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="tab-operator">
+      <view data-index="{{index}}" bindtap="scrollToIndex" class="{{currentTabIndex === index ? 'tab-active' : ''}}" wx:for="{{tabList}}" wx:key="{{index}}">{{item}}</view>
+  </view>
+  <scroll-view scroll-x="false" scroll-y="true" upper-threshold="50" lower-threshold="50"  scroll-into-view="{{scrollIntoView}}" scroll-with-animation="true" style="height: {{scrollViewHeight}}px">
+    
+    <view class="section-wrapper">
+      <view id="scroll-to-index0" class="section-wrapper-title scroll-to-index0">小册内容</view>
+      <view wx:for="{{sectionList}}" wx:key="{{index}}" class="item">
+        <view class="item-content">
+          <view class="item-index">
+            {{index + 1}}
+          </view>
+          <view class="section-content">
+            <view class="section-title">
+              {{item.title}}
+            </view>
+            <view class="section-info">
+              <text>{{item.pv}}次学习</text>
+            </view>
+          </view>
+          
+        </view>
+      </view>
+      <view id="scroll-to-index1" class="section-title scroll-to-index1"></view>
+      <view class="section-intro">
+        <view>
+          <import src="../../wxParse/wxParse.wxml"/>
+          <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>
+      </view>
+      <view class="detail-comment">
+        <view id="scroll-to-index2" class="scroll-to-index2">精选评论</view>
+        <view class="comment-item" wx:for="{{commentInfo.data}}" wx:index="{{commentIndex}}" wx:key="{{commentIndex}}">
+          <view>{{item.content}}</view>
+          
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+

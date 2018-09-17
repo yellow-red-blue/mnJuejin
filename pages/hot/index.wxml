@@ -1,0 +1,27 @@
+<!--pages/hot/index.wxml-->
+<view class="hot">
+  <view class="hot-item" wx:for="{{hotList}}" wx:key="{{itemIndex}}" wx:index="{{itemIndex}}">
+    <view class="hot-person">
+      <view class="hot-avator">
+        <image src="{{item.avatar}}" mode="scaleToFill|aspectFit|aspectFill|widthFix" binderror="" bindload=""></image>
+      </view>
+      <view class="hot-right">
+        <view class="hot-person-username">
+          {{item.username}}
+        </view>
+        <view class="hot-person-desc">
+          <text wx:if="{{item.jobtitle.length}}" class="person-desc">{{item.jobtitle}}</text>
+          <text class="person-time">{{item.time}}</text>
+        </view>
+      </view>
+      
+    </view>
+    <view class="hot-content">
+      <text class="hot-content-detail">{{item.content}}</text>
+    </view>
+    <view class="hot-image" wx:if="{{item.pictures.length}}" data-pics="{{item.pictures}}">
+      <v-preImage imgListIndex="{{index}}" imgList="{{item.pictures}}"></v-preImage>
+    </view>
+  </view>
+</view>
+

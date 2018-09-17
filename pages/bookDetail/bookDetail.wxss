@@ -1,0 +1,116 @@
+/* pages/bookDetail/bookDetail.wxss */
+@import "../../wxParse/wxParse.wxss";
+
+.book-detail {
+  
+}
+.book-info {
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px #eeeeee;
+  margin-bottom: 10px;
+}
+.section-intro view {
+  font-size: 14px;
+  line-height: 26px;
+}
+/* mulu */
+.tab-operator {
+  display: flex;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #e2e2e2;
+}
+.tab-operator view{
+  flex: 1;
+  text-align: center;
+  border-bottom: 4rpx solid white;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.tab-active {
+  border-bottom: 4rpx solid #548ffc !important;
+}
+/* bookInfo */
+.book-info {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.book-left {
+  flex: 0 0 170rpx;
+}
+.book-left image {
+  height: 240rpx;
+  width: 100%;
+}
+.book-right {
+  flex: 1;
+  padding-left: 20rpx;
+}
+.boo-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.book-desc {
+  margin-top: 10rpx;
+  font-size: 14px;
+  color: #999999;
+}
+.book-user-info {
+  height: 50rpx;
+  line-height: 0;
+  font-size: 0;
+}
+.book-user-avator {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 30rpx;
+}
+.book-user-username {
+  margin-left: 20rpx;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 50rpx;
+  color: #666666;
+}
+.item-content {
+  display: flex;
+  align-items: center;
+  
+}
+.item-index {
+  flex: 0 0 80rpx;
+  text-align: center;
+  color: #999999;
+}
+.section-content {
+  flex: 1;
+  margin-right: 10px;
+  border-bottom: 1rpx solid rgb(233, 233, 233);
+}
+.section-title {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.section-info {
+  margin-bottom: 10px;
+}
+.section-info text{
+  font-size: 14px;
+  color: #999;
+}
+.section-intro {
+  padding: 0px 20px;
+}
+.section-wrapper-title {
+  padding: 15px;
+}
+.detail-comment {
+  padding: 20px;
+}
+.comment-item {
+  font-size: 14px;
+  color: #666666;
+}
+scroll-view {
+  height: 800rpx;
+}

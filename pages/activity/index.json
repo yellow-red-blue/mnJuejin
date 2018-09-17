@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-activeity": "../../components/activeity-item/activeity-item"
+  }
+}

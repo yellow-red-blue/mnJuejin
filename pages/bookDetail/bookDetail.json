@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-skeleton": "../../components/skeleton/skeleton"
+  }
+}

@@ -1,0 +1,58 @@
+/**index.wxss**/
+.title {
+  font-size: 32rpx;
+  
+  color: #2e3135;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-wrapper {
+}
+.list-item {
+  padding: 40rpx 40rpx;
+  border-top: 1rpx solid #ebe9e9;
+}
+.item-type {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  border-radius: 2px;
+  width: 108rpx;
+  padding: 3px 0;
+  background: greenyellow;
+}
+.item-info {
+  margin-top: 16rpx;
+}
+.item-info text {
+  font-size: 24rpx;
+  margin-right: 15rpx;
+}
+.item-info {
+  font-size: 24rpx;
+}
+.item-username {
+  font-size: 24rpx;
+  color: #909090;
+}
+.item-viewcount {
+  font-size: 24rpx;
+  color: #909090;
+}
+.type-html {
+  background: rgb(86, 196, 225);
+}
+.type-android {
+  background: rgb(66, 198, 125);
+}
+.type-gong {
+  background: rgb(232, 89, 107);
+}
+.type-java {
+  background: rgb(133, 125, 234);
+}
+.type-ios {
+  background: rgb(255, 149, 91);
+}

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view wx:if="{{loading}}">
+<v-skeleton></v-skeleton>
+</view>
+<view class="list-wrapper">
+  <view class="list-item" wx:for = "{{recommendList}}" wx:key ="index">
+    <view class="title">{{item.title}}</view>
+    <view class="item-info">
+
+      <text class="item-type {{item.typeCls}}">{{item.type}}</text>
+      <text class="item-username">·{{item.username}}</text>
+      <text class="item-username">·{{item.time}}</text>
+      <text class="item-viewcount">·{{item.viewsCount}}次阅读</text>
+    </view>
+  </view>
+</view>

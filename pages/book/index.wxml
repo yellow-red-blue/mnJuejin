@@ -1,0 +1,26 @@
+<!--pages/book/index.wxml-->
+<view class="book-item" wx:for="{{bookList}}" wx:key="{{index}}">
+  <view class="book-left">
+    <image src="{{item.img}}" mode="scaleToFill|aspectFit|aspectFill|widthFix" binderror="" bindload=""></image>
+  </view>
+  <view class="book-middle" data-id="{{item.id}}" bind:tap="jumpBookDetail">
+    <view class="book-title">
+    {{item.title}}
+    </view>
+    <view class="book-name">
+    {{item.userName}}
+    </view>
+    <view class="book-info">
+      <text>{{item.lastSectionCount}}小节</text>
+      <text>{{item.buyCount}}人已购买</text>
+    </view>
+  </view>
+  <view class="book-right">
+    <view wx:if="{{!item.isBuy}}" class="book-price">
+      ￥{{item.price}}
+    </view>
+    <view wx:if="{{item.isBuy}}" class="book-price">
+      已经购买
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--components/activeity-item/activeity-item.wxml-->
+<view class="activeity-item">
+  <image class="activeity-screenshot" src="{{activeity.screenshot}}" mode="scaleToFill|aspectFit|aspectFill|widthFix" binderror="" bindload=""></image>
+  <view class="activeity-name">{{activeity.name}}</view>
+  <view class="activeity-time">
+    <icon type="success" size="14" color="#dadada">
+
+    </icon>
+    <text>{{activeity.time}}</text>
+  </view>
+  <view class="activeity-city">
+    <icon type="info" size="14" color="#dadada">
+
+    </icon>
+    <text>{{activeity.city}}</text>
+    
+    <text data-url="{{activeity.eventUrl}}" bind:tap="joinAcity" class="activeity-join">报名参加</text>
+  </view>
+</view>
